@@ -4,15 +4,17 @@ class Stack:
         self.items = []
         self.size = size
 
-    def is_empty(self):
-        # Write code here
+    def is_empty(self):        
         if len(self.items) == 0:
             return True
+        else:
+            return False
 
     def is_full(self):
-        # Write code here
-        if len(self.items) >= size:
+        if len(self.items) == size:
             return True
+        else:
+            return False
 
     def push(self, data):
         if not self.is_full():
